@@ -5,7 +5,7 @@ on:
     branches:
       - main  # Change if your branch is "master"
   schedule:
-    - cron: '43 14 9 2 0'  # Runs daily at 08:00 UTC
+    - cron: '45 14 9 2 0'  # Runs daily at 08:00 UTC
 
 jobs:
   build:
@@ -14,5 +14,5 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4  # Use latest version
 
-      - name: Running
+      - name: 21f3000330@ds.study.iitm.ac.in
         run: echo "Running!"
