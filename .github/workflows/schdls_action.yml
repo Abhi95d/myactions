@@ -4,13 +4,12 @@ on:
     branches:
       - master
   schedule:
-    - cron: '34 14 9 2 0'
+    - cron: '36 14 9 2 0'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: 21f3000330@ds.study.iitm.ac.in
     - name: Running
       run: |
         echo "Running!"
