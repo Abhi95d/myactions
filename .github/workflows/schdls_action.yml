@@ -1,15 +1,18 @@
 name: Master
+
 on:
   push:
     branches:
-      - master
+      - main  # Change if your branch is "master"
   schedule:
-    - cron: '0 8 1 * *'
+    - cron: '43 14 9 2 0'  # Runs daily at 08:00 UTC
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Running
-      run: |
-        echo "Running!"
+      - name: Checkout Repository
+        uses: actions/checkout@v4  # Use latest version
+
+      - name: Running
+        run: echo "Running!"
