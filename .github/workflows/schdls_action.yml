@@ -5,7 +5,7 @@ on:
     branches:
       - main  # Change if your branch is "master"
   schedule:
-    - cron: '45 14 9 2 0'  # Runs daily at 08:00 UTC
+    - cron: '51 14 * * *'  # Runs daily at 08:00 UTC
 
 jobs:
   build:
